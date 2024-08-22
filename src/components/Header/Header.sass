@@ -14,7 +14,19 @@
 			display: flex
 			.header__phone
 				display: flex
+				align-items: center
 				column-gap: 8px
+				img
+					width: 20px
+					aspect-ratio: 1
+			.header__icons
+				display: flex
+				column-gap: 23px
+				margin-left: 32px
+				.header__icon
+					color: $gray
+					width: 23px
+					aspect-ratio: 1
 		.header__nav
 			display: flex
 			column-gap: 32px
@@ -38,3 +50,13 @@
 		display: flex
 		align-items: center
 		justify-content: center
+@media screen and (width <= 860px)
+	.header__block
+		display: none !important
+@media screen and (width <= 600px)
+	.header__container
+		justify-content: center !important
+		.header__nav
+			display: none !important
+	.header__discount
+		display: none !important

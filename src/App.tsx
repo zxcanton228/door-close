@@ -1,12 +1,14 @@
-import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
+import Landing from './components/Landing/Landing.tsx'
 
 const App = () => {
 	return (
 		<>
 			<Header />
-			<main>main</main>
-			<Footer />
+			<main>
+				<Landing />
+			</main>
+			{/*<Footer />*/}
 		</>
 	)
 }
