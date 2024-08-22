@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap')
+@import "./reset.sass"
+@import "./_vars.sass"
+
+body, html
+	min-height: 100vh
+	width: 100%
+
+	background: $background
+
+	font-family: $font
+	color: $black
+
+main
+	flex: 1 0 auto
+	max-width: 100vw
+	overflow: hidden
+
+	height: 100%
+
+	margin-top: $headerHeight
+#root
+	min-height: 100%
+	display: flex
+	flex-direction: column
+
+.container
+	width: min(1240px, 98%)
+	margin: 0 auto
+
+::selection 
+	background: $background
+	color: #fff
+
+::-webkit-scrollbar
+	width: 9px
+	background: $background
+
+::-webkit-scrollbar-thumb
+	background: $gray
+	width: 9px

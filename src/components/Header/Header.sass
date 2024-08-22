@@ -1,0 +1,40 @@
+@import "./../../styles/_vars.sass"
+.header
+	width: 100%
+	max-height: $headerHeight
+	background-color: $background
+	position: fixed
+	box-shadow: 0px -1px 0px 0px rgba(196, 205, 213, 1) inset
+	.header__container
+		height: calc($headerHeight - 44px)
+		display: flex
+		justify-content: space-between
+		align-items: center
+		.header__block
+			display: flex
+			.header__phone
+				display: flex
+				column-gap: 8px
+		.header__nav
+			display: flex
+			column-gap: 32px
+			a
+				font: 300 20px $font
+				line-height: 23.87px
+				color: $black
+				transition: color .4s
+				cursor: pointer
+				&:hover
+					color: gray
+	.header__discount
+		width: 100%
+		height: 44px
+
+		background: $gray
+
+		color: white
+		font: 500 16px $font
+
+		display: flex
+		align-items: center
+		justify-content: center
